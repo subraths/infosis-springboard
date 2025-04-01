@@ -10,8 +10,6 @@ type User struct {
 	Email string `json:"email"`
 }
 
-var users, _ = getData()
-
 func getData() ([]User, error) {
 	file, err := os.Open("search_engine/users.json")
 	if err != nil {
